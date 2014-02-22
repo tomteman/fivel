@@ -1,0 +1,23 @@
+{
+  "name": "fivel",
+  "version": "0.0.0",
+  "description": "fivel game",
+  "main": "server.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "logfmt": "~0.21.0",
+    "express": "~3.4.8",
+    "ejs": "~0.8.5",
+    "path": "~0.4.9",
+    "http": "0.0.0"
+  }
+}

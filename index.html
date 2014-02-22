@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fivel</title>
+<script src="../FivelHTML/Scripts/swfobject_modified.js" type="text/javascript"></script>
+
+<!-- FIVEL by Shay Davidson, Moshe Lichman and Tom Teman -->
+
+</head>
+
+<style type="text/css">
+	body {
+		background: #999; 
+		filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#99ffff', endColorstr='#0099cc'); 
+		background: -webkit-gradient(linear, left top, left bottom, from(#99ffff), to(#0099cc)); 		
+		background: -moz-linear-gradient(top,  #99ffff,  #0099cc);
+	}
+	#wrapper {
+		margin    : auto;
+		position  : relative;
+		z-index   : 10;
+		max-height: 830px;
+	}
+</style>	
+
+<body text=""#4D2726" vlink="#4D2726" alink="#4D2726" link="#4D2726">
+    <!-- FLASH -->
+        <div align="center" id="wrapper">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td colspan="3"><img src="FivelHTML/Images/FivelCoverTop.png"/></td>
+                </tr>
+                <tr>
+                    <td><img src="FivelHTML/Images/FivelCoverLeft.png"/></td>
+                    
+                    <td>
+                        <!-- FLASH --> 
+                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="760" height="500" align="middle" id="FlashID">
+                                <param name="movie" value="FivelClient/bin-release/FivelClient.swf" />
+                                <param name="quality" value="high" />
+                                <param name="wmode" value="opaque" />
+                                <param name="swfversion" value="6.0.65.0" />
+                                <param name="expressinstall" value="FivelHTML/Scripts/expressInstall.swf" />
+                                <param name="SCALE" value="exactfit" />
+                                <param name="BGCOLOR" value="#D6D6D6" />
+								<param name="allowScriptAccess" value="sameDomain" />
+                                <embed src="FivelClient/bin-release/FivelClient.swf" quality="high" bgcolor="#D6D6D6" width="760" height="500"
+                                 name="FlashID" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash"
+                                 pluginspage="http://www.macromedia.com/go/getflashplayer" /> 
+                            </object>
+                            <script type="text/javascript">
+                          		swfobject.registerObject("FlashID");
+                            </script>
+                        <!-- END FLASH -->
+                    </td>
+                        
+                    <td><img src="FivelHTML/Images/FivelCoverRight.png"/></td>
+                </tr>	
+                <tr>
+                    <td colspan="3"><img src="FivelHTML/Images/FivelCoverBot.png"/></td>
+                </tr>
+            </table>
+        </div>
+    <!-- END FLASH -->
+        
+    <!-- LINKS -->
+        <div align="center">
+            <h5>
+                <a href="Fivel.html">Game</a> | 
+                <a href="FivelHTML/FivelAbout.html">About</a> |
+                <a href="http://code.google.com/p/fivel/source/browse/#svn/trunk" target="_blank">Source</a>
+            </h5>
+        </div>
+        <br /><br />
+    <!-- END LINKS -->
+
+    <!-- JAVA APPLET -->
+    <applet name="Backend" codebase="FivelBackend" code="fivel.FivelApplet" archive="fivelBackend.jar" width=0 height=0></applet>
+    <!-- END JAVA APPLET -->
+        
+    <!-- INTERFACE -->
+	<script type="text/javascript">      
+        	
+            function startGame()
+            {
+                document.Backend.startGame();  
+            }
+            
+            function returnStartingPlayer(player)
+            {  
+           	getFlashMovie("FlashID").returnStartingPlayer(player);
+            }
+            
+            function performMove(player, i, j, tile)
+            {
+                document.Backend.performMove(player, i, j, tile);
+            }
+            
+            function confirmMove(endState, i1, j1, i2, j2, i3, j3, i4, j4, i5, j5, x1, y1, x2, y2, x3, y3, x4, y4, x5, y5)
+            {
+		getFlashMovie("FlashID").confirmMove(endState, i1, j1, i2, j2, i3, j3, i4, j4, i5, j5, x1, y1, x2, y2, x3, y3, x4, y4, x5, y5);
+            }
+            
+            function requestMove(player, diff, turn)
+            {
+                document.Backend.requestMove(player, diff, turn);
+            }
+            
+            function returnMove(player, i, j, tile)
+            {
+		getFlashMovie("FlashID").returnMove(player, i, j, tile);
+            }   
+           
+            <!-- UTILS -->
+                function getFlashMovie(movieName)
+                {
+                    var isIE = navigator.appName.indexOf("Microsoft") != -1;
+                    return (isIE) ? window[movieName] : document[movieName];
+                }
+            <!-- END UTILS -->
+
+        </script>
+	<!-- END INTERFACE -->
+    
+</body>
+</html>
