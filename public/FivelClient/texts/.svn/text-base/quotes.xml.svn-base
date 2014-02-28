@@ -1,0 +1,141 @@
+<!-- FIVEL's Client by Shay Davidson, Moshe Lichman and Tom Teman -->
+
+<quotes>
+
+	<char id="fivel">
+		<victory>
+			<quote text=""/>
+			<quote text=""/>
+		</victory>
+		
+		<lose>
+			<quote text=""/>
+			<quote text=""/>
+		</lose>
+		
+		<draw>
+			<quote text=""/>
+			<quote text=""/>
+		</draw>
+		
+		<smacktalk>
+			<quote text=""/>
+			<quote text=""/>
+		</smacktalk>
+		
+		<thinking>
+			<quote text=""/>
+			<quote text=""/>
+		</thinking>
+	</char>
+	
+	<char id="racruel">
+		<victory>
+			<quote text=""/>
+			<quote text=""/>
+		</victory>
+		
+		<lose>
+			<quote text=""/>
+			<quote text=""/>
+		</lose>
+		
+		<draw>
+			<quote text=""/>
+			<quote text=""/>
+		</draw>
+		
+		<smacktalk>
+			<quote text=""/>
+			<quote text=""/>
+		</smacktalk>
+		
+		<thinking>
+			<quote text=""/>
+			<quote text=""/>
+		</thinking>
+	</char>
+	
+	<char id="owlstein">
+		<victory>
+			<quote text=""/>
+			<quote text=""/>
+		</victory>
+		
+		<lose>
+			<quote text=""/>
+			<quote text=""/>
+		</lose>
+		
+		<draw>
+			<quote text=""/>
+			<quote text=""/>
+		</draw>
+		
+		<smacktalk>
+			<quote text=""/>
+			<quote text=""/>
+		</smacktalk>
+		
+		<thinking>
+			<quote text=""/>
+			<quote text=""/>
+		</thinking>
+	</char>
+	
+	<char id="beer'sa">
+		<victory>
+			<quote text=""/>
+			<quote text=""/>
+		</victory>
+		
+		<lose>
+			<quote text=""/>
+			<quote text=""/>
+		</lose>
+		
+		<draw>
+			<quote text=""/>
+			<quote text=""/>
+		</draw>
+		
+		<smacktalk>
+			<quote text=""/>
+			<quote text=""/>
+		</smacktalk>
+		
+		<thinking>
+			<quote text=""/>
+			<quote text=""/>
+		</thinking>
+	</char>
+	
+	<char id="fiv-evil">
+		<victory>
+			<quote text=""/>
+			<quote text=""/>
+		</victory>
+		
+		<lose>
+			<quote text=""/>
+			<quote text=""/>
+		</lose>
+		
+		<draw>
+			<quote text=""/>
+			<quote text=""/>
+		</draw>
+		
+		<smacktalk>
+			<quote text=""/>
+			<quote text=""/>
+		</smacktalk>
+		
+		<thinking>
+			<quote text=""/>
+			<quote text=""/>
+		</thinking>
+	</char>
+	
+</quotes>
+

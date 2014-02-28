@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/9/trunk/FivelClient/libs/com/greensock/loading/core
+END
+LoaderCore.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/9/trunk/FivelClient/libs/com/greensock/loading/core/LoaderCore.as
+END
+DisplayObjectLoader.as
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/FivelClient/libs/com/greensock/loading/core/DisplayObjectLoader.as
+END
+LoaderItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/9/trunk/FivelClient/libs/com/greensock/loading/core/LoaderItem.as
+END

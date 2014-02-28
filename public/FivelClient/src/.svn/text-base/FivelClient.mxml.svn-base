@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" 
+			   minWidth="760" minHeight="500" width="760" height="500" maxWidth="760" maxHeight="500" frameRate="30"
+			   preloader="utils.Preloader" addedToStage="init()">
+	
+	<!-- FIVEL's Client by Shay Davidson, Moshe Lichman and Tom Teman -->
+	
+	<fx:Script>
+		<![CDATA[
+			import com.greensock.plugins.GlowFilterPlugin;
+			import com.greensock.plugins.TweenPlugin;
+			
+			import game.*;
+			
+			import ui.*;
+			
+			import utils.FivelContextMenu;
+			import utils.SoundManager;
+			import utils.externalInterface.BackendInterface;
+		
+			private var board 			 : GameManager; // Game visual component.
+			private var menu             : GameMenu;    // Game menu.
+			private var cover            : BushTransit; // Transition graphic.
+			private var anim             : CharTransit; // Animation transition.
+			private static var _instance : FivelClient; // Singelton self instance.
+			
+			/**
+			 * Initalizes the application.
+			 */
+			public function init():void
+			{
+				// Singelton assignment.
+				_instance = this;
+				
+				// Context Menu.
+				contextMenu = FivelContextMenu.getMenu();
+				
+				// Backend Interface.
+				BackendInterface.instance.init();
+				
+				// Graphics.
+				TweenPlugin.activate([GlowFilterPlugin]);
+				board = new GameManager();
+				menu  = new GameMenu();
+				anim  = new CharTransit();
+				cover = new BushTransit();
+				stage.addChild(new GFX_Background());
+				stage.addChild(board);
+				stage.addChild(menu);
+				stage.addChild(anim);
+				stage.addChild(new AudioControl());
+				stage.addChild(new Cursor());
+				stage.addChild(cover);
+				stage.addChild(new GFX_Foreground());
+				
+				// Sounds.
+				SoundManager.instance.playMusicByClass(SFX_Theme, 99999);
+			}
+			
+			// GRAPHICAL TRANSITIONS
+			/**
+			 * Makes a transition between the menu and the character animation.
+			 */
+			public function transitStartGame():void
+			{
+				cover.transit(menu, anim, anim.playAnimation);
+			}
+			
+			/**
+			 * Makes a transition between the character animation screen and the game board.
+			 */
+			public function transitShowBoard():void
+			{
+				cover.transit(anim, board, GameManager.instance.startBoard);
+			}
+			
+			/**
+			 * Makes a transition between the game board and the main menu.
+			 */
+			public function transitEndGame():void
+			{
+				cover.transit(board, menu, menu.activate);
+			}
+				
+			/** 
+			 * Singelton getter.
+			 */
+			public static function get instance():FivelClient
+			{
+				return _instance;
+			}
+		]]>
+	</fx:Script>
+</s:Application>
+
