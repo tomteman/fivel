@@ -1,0 +1,63 @@
+package fivel;
+
+import fivel.config.Difficulty;
+
+/**
+ * A tile slot object.
+ * 
+ * @author Shay Davidson, Moshe Lichman and Tom Teman.
+ * Game Intelligence course, TAU 2010/11a.
+ */
+public class FivelDifficulties
+{
+	public static final Difficulty[] LEVELS = new Difficulty[4];
+	
+	static
+	{
+		// Configure difficulties.
+		Difficulty BEGINNER    = new Difficulty("BEGINNER",    
+<<<<<<< .mine
+						new int[] { 1 },
+						2, 3);
+
+		Difficulty EXPERIENCED = new Difficulty("EXPERIENCED",
+						new int[] { 2 },
+						2, 2);
+=======
+												new int[] { 1 },
+												2, 3);
+>>>>>>> .r97
+		
+<<<<<<< .mine
+		Difficulty TOUGH       = new Difficulty("TOUGH", 
+						new int[] { 3 },
+						2, 2);
+=======
+		Difficulty EXPERIENCED = new Difficulty("EXPERT",
+												new int[] { 2 },
+												2, 2);
+>>>>>>> .r97
+		
+<<<<<<< .mine
+=======
+		Difficulty TOUGH       = new Difficulty("TOUGH",
+												new int[] { 3 },
+												2, 2);
+		
+>>>>>>> .r97
+		Difficulty GODLIKE     = new Difficulty("GODLIKE",
+<<<<<<< .mine
+						new int[] { 5 },
+						2.5, 2);
+=======
+												new int[] { 4 },
+												2.5, 2);
+>>>>>>> .r97
+		
+		// Put difficulties in level array.
+		LEVELS[0] = BEGINNER;
+		LEVELS[1] = EXPERIENCED;
+		LEVELS[2] = TOUGH;
+		LEVELS[3] = GODLIKE;
+	}
+}

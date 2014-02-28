@@ -18,10 +18,19 @@ import fivel.model.BoardGame;
 public class FivelTesting
 {
 	/** CONFIGURABLES */
-	public static final int numberOfGamesPerMatchType = 10; 	// How many games per match type.
+<<<<<<< .mine
+	public static final int numberOfGamesPerMatchType = 2; 		// How many games per match type.
+=======
+	public static final int numberOfGamesPerMatchType = 1; 	// How many games per match type.
+>>>>>>> .r97
 	public static final int difficultyMin             = 0; 		// Minimum range for difficulty (0-3). Should be lower or equal to max.
+<<<<<<< .mine
 	public static final int difficultyMax             = 3; 		// Maximum range for difficulty (0-3). Should be higher or equal to min.
+	public static final boolean singleGame            = true; 	// Whether to play a single game (with difficultyMin and Max as the players) 
+=======
+	public static final int difficultyMax             = 2; 		// Maximum range for difficulty (0-3). Should be higher or equal to min.
 	public static final boolean singleMatch           = false; 	// Whether to play a single game (with difficultyMin and Max as the players) 
+>>>>>>> .r97
 																// or a range of games (from min to max - all permutations).
 	/**
 	 * Main function for testing purposes.

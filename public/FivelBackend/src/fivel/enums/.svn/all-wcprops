@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/80/trunk/FivelBackend/src/fivel/enums
+END
+PieceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/79/trunk/FivelBackend/src/fivel/enums/PieceStatus.java
+END
+PiecePosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/73/trunk/FivelBackend/src/fivel/enums/PiecePosition.java
+END
+EndStates.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/80/trunk/FivelBackend/src/fivel/enums/EndStates.java
+END
